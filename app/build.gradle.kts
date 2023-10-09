@@ -16,7 +16,8 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+//        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.example.kotlinmvvmflow.CustomRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -62,13 +63,6 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.navigation:navigation-compose:2.5.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
-    debugImplementation("androidx.compose.ui:ui-tooling")
-    debugImplementation("androidx.compose.ui:ui-test-manifest")
 
     implementation("com.google.dagger:hilt-android:2.44")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
@@ -90,6 +84,33 @@ dependencies {
 
     //Coil
     implementation("io.coil-kt:coil-compose:2.4.0")
+
+    //Testing
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    testImplementation ("org.hamcrest:hamcrest-all:1.3")
+    testImplementation ("androidx.arch.core:core-testing:2.2.0")
+    testImplementation ("org.robolectric:robolectric:4.5.1")
+    testImplementation ("org.mockito:mockito-core:3.12.4")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
+    testImplementation ("app.cash.turbine:turbine:0.7.0")
+    androidTestImplementation ("com.google.dagger:hilt-android-testing:2.48")
+
+    // AndroidX Test - JVM testing
+    testImplementation ("androidx.test:core-ktx:1.5.0")
+
+    // AndroidX Test - Instrumented testing
+    testImplementation ("android.arch.core:core-testing:1.1.1")
+    androidTestImplementation ("androidx.test.espresso:espresso-core:3.5.1")
+
+    androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.11.0")
+
 }
 
 // Allow references to generated code

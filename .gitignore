@@ -30,3 +30,5 @@ replay_pid*
 .gradle/8.0/checksums/sha1-checksums.bin
 *.bin
 *.lock
+.idea/androidTestResultsUserPreferences.xml
+*.probe

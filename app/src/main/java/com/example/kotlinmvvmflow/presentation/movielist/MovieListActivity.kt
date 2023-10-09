@@ -24,30 +24,7 @@ class MovieListActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-//                    Greeting(name = "acitivity Opened")
                     Navigator().appNavigator()
-
-                    /*val viewModel: MovieListViewModel by viewModels()
-                    val mState by viewModel.mState.collectAsState()
-                    when (mState) {
-                        is HomeMListViewState.ErrorResponse -> {
-                            Greeting(name = "Error")
-                        }
-
-                        HomeMListViewState.Init -> Greeting(name = "Init")
-                        is HomeMListViewState.IsLoading -> Greeting(name = "Loading")
-                        is HomeMListViewState.ShowToast -> Greeting(name = "ShowToast")
-                        is HomeMListViewState.SuccessResponse -> {
-//                            val movieList =(mState as HomeMListViewState.SuccessResponse).MList
-                            //MovieGridUI(movieList = movies)
-//                            Navigator().appNavigator()
-//                            val navController = rememberNavController()
-//                            navController.navigate(Screen.Screen1.route)
-
-                        }
-
-                    }*/
-
                 }
             }
         }
