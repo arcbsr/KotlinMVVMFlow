@@ -18,7 +18,7 @@ class MobileApiServiceTest {
     @Test
     fun testApiRequest( ) = runTest{
         val mockResponse = MockResponse()
-        val responseJson = "{ \"key\": \"value\" }"
+        val responseJson = "{}"
         mockResponse.setBody(responseJson)
         mockWebServer.enqueue(mockResponse)
         mockWebServer.start()
