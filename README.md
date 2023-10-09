@@ -34,10 +34,10 @@ The app interacts with external data sources through Retrofit to fetch data from
 ## Dependency Injection
 Dagger(Hilt) ensures that dependencies are injected into the components where they are needed, making the codebase modular and testable.
 
-### Coroutines
+## Coroutines
 Coroutines are employed for managing asynchronous operations, such as network requests and database interactions, in a structured and readable manner.
 
-### Testing
+## Testing
 Unit tests are written to validate the functionality of individual components, ensuring that the app remains robust and reliable.
 
 
