@@ -5,7 +5,7 @@ This Android application is a robust and efficient mobile solution developed usi
 
 ## Key Features:
 
-## MVVM Architecture
+## App Architecture
 The app is structured around the MVVM architecture, separating the presentation logic (ViewModel) from the UI (View) and the data layer (Model). This enhances code maintainability, testability, and scalability.
 
 ## Dependency Injection with Dagger
